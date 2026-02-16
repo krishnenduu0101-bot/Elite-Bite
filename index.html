@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Elite Bites</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="#">Elite Bites</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#order">Orders</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Deals
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cart</a></li>
+              <li><a class="dropdown-item" href="#">Wishlist</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#Location">Location</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.pexels.com/photos/10361458/pexels-photo-10361458.jpeg" class="slide w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/7368045/pexels-photo-7368045.jpeg" class="slide d-block w-100"
+          alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/357573/pexels-photo-357573.jpeg" class="slide w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
+  <div class="container" id="order">
+    <h1 class="text-center">Order Your Food Now...</h1>
+    
+    
+    <div class="row my-4 justify-content-center g-4">
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card h-100 border border-primary border-2 shadow-sm">
+          <img src="https://images.pexels.com/photos/12325280/pexels-photo-12325280.jpeg" class="card-img-top"
+            alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Burger</h5>
+            <p class="card-text">Yummy Burger</p>
+            <a href="#" class="btn btn-primary order-btn">Order Now</a>
+            <h5 class="card-title text-danger">Rs:110.00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card h-100 border border-primary border-2 shadow-sm">
+          <img src="OIP.jpg" class="card-img-top " alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sandwich</h5>
+            <p class="card-text">Tasty egg Sandwich.</p>
+            <a href="#" class="btn btn-primary order-btn" data-food="Sandwich">Order Now</a>
+            <h5 class="card-title text-danger">Rs:100</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card h-100 border border-primary border-2 shadow-sm">
+          <img src="biriyani.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Chicken Biriyani</h5>
+            <p class="card-text">Tasty Biriyani.</p>
+            <a href="#" class="btn btn-primary order-btn">Order Now</a>
+            <h5 class="card-title text-danger">Rs:100.00</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card h-100 border border-primary border-2 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1700448293876-07dca826c161?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cake</h5>
+            <p class="card-text">Yummy cake</p>
+            <a href="#" class="btn btn-primary order-btn">Order Now</a>
+            <h5 class="card-title text-danger">Rs:500.00</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card h-100 border border-primary border-2 shadow-sm">
+          <img src="falooda.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Falooda</h5>
+            <p class="card-text">Delicious Falooda</p>
+            <a href="#" class="btn btn-primary order-btn">Order Now</a>
+            <h5 class="card-title text-danger">Rs:110.00</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card h-100 border border-primary border-2 shadow-sm">
+          <img src="porotta.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Porotta</h5>
+            <p class="card-text">Tasty porotta</p>
+            <a href="#" class="btn btn-primary order-btn">Order Now</a>
+            <h5 class="card-title text-danger">Rs:120.00</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <div class="container-fluid bg-dark ">
+        <div class="row text-light">
+          <div class="container" id="Location"></div>
+          <div class="col-12 text-light text-center">
+            <h1 class="text-primary">Elite Bites</h1>
+            <h4 class="text-center">Location:Kozhikode,Kerala</h4>
+            <p >Tel:0123456789</p>
+            <p>E-mail: Elite Bites@gmail.com</p>
+            <p>Website: www.Elite Bites.com</p>
+          </div>
+          <div class="col-12 text-center">
+            <a href="https://maps.app.goo.gl/svQkxHbjMDyWJBQw7" target="_blank" class="text-white fw-bold">
+              View on Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+      <script src="style.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
